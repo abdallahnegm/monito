@@ -1,0 +1,134 @@
+/*start global rules*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --primary-color: #002A48;
+    --secondary-color: #FCEED5;
+    --main-border-radius:15px;
+    --black-color:#000;
+    --white-color: #fff;
+    --main-tran: 0.5s;
+}
+/* end global rules */
+/* start header  */
+header{
+    background-color: var(--white-color);
+}
+header .container::before{
+    background-color: unset;
+}
+/* end header  */
+/* start  about  */
+.about .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px ;
+}
+.about .container .left{
+    width: 50%;
+}
+.about .container .right{
+    width: 50%;
+}
+.about .container .left span {
+    font-size: 18px;
+    font-weight: 500;
+}
+.about .container .left h1{
+    margin-top: 20px;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.about .container .right p{
+    font-size: 18px;
+    color: #2D2D2D;
+    margin: 30px 0;
+    line-height: 27px;
+}
+@media (max-width:992px) {
+    .about .container{
+        flex-direction: column;
+        margin: 20px;
+    }
+    .about .container .right , .about .container .left{
+        padding: 0px;
+        width: 100%;
+    }
+    .about .container .right p , .about .container .right h1{
+        color: #667479;
+    }
+    .about .container .left h1{
+        font-size: 36px;
+    }
+}
+/* end about  */
+/* start counters  */
+.counters .container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px ;
+    align-items: center;
+}
+
+.counters .container .left{
+    width: 50%;
+}
+@media (max-width:992px) {
+    .counters .container{
+        flex-direction: column;
+    }
+    .counters .container .left , .counters .container .right{
+        width: 100%;
+    }
+}
+.counters .container .left h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+@media (max-width:992px) {
+    .counters .container{
+        flex-direction: column;
+    }
+    .counters .container .left , .counters .container .right{
+        width: 100%;
+    }
+    .counters .container .left h2{
+        font-size: 30px;
+    }
+    .counters .right{
+        margin-top: 50px;
+    }
+}
+.counters .container .left p{
+    font-size: 18px;
+    color: #2D2D2D;
+    margin: 30px 0;
+    line-height: 27px;
+}
+.counters .container .left .cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.counters .container .left .number{
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 30px !important;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+.counters .container .left h1{
+    font-size: 30px;
+}
+.counters .container .left p{
+    font-size: 22px;
+    color: #2D2D2D;
+    margin: 10px 0;
+}
+/* end counters  */
